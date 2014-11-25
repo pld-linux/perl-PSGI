@@ -1,30 +1,25 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	PSGI
 %include	/usr/lib/rpm/macros.perl
 Summary:	PSGI - Perl Web Server Gateway Interface Specification
-#Summary(pl.UTF-8):	
 Name:		perl-PSGI
 Version:	1.09_1
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/M/MI/MIYAGAWA/PSGI-1.09_1.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/M/MI/MIYAGAWA/PSGI-%{version}.tar.gz
 # Source0-md5:	e043571789d55ce06f0066c33b4579c3
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/PSGI/
+URL:		http://search.cpan.org/dist/PSGI/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-
-
-# %description -l pl.UTF-8
-# TODO
+Perl Web Server Gateway Interface Specification.
 
 %prep
 %setup -q -n %{pdir}-%{version}
