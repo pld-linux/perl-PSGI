@@ -3,7 +3,6 @@
 %bcond_without	tests		# do not perform "make test"
 
 %define		pdir	PSGI
-%include	/usr/lib/rpm/macros.perl
 Summary:	PSGI - Perl Web Server Gateway Interface Specification
 Name:		perl-PSGI
 Version:	1.09_1
