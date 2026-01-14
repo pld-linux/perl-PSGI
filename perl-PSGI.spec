@@ -6,7 +6,7 @@
 Summary:	PSGI - Perl Web Server Gateway Interface Specification
 Name:		perl-PSGI
 Version:	1.09_1
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/MI/MIYAGAWA/PSGI-%{version}.tar.gz
