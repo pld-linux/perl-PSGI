@@ -5,12 +5,12 @@
 %define		pdir	PSGI
 Summary:	PSGI - Perl Web Server Gateway Interface Specification
 Name:		perl-PSGI
-Version:	1.09_1
-Release:	2
+Version:	1.102
+Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/MI/MIYAGAWA/PSGI-%{version}.tar.gz
-# Source0-md5:	e043571789d55ce06f0066c33b4579c3
+# Source0-md5:	d911de31f11f0cfd7cc142a23df80b82
 URL:		http://search.cpan.org/dist/PSGI/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -43,5 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_vendorlib}//*.pm
+%{perl_vendorlib}/PSGI.pod
 %{perl_vendorlib}/PSGI/
 %{_mandir}/man3/*
